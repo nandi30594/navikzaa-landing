@@ -16,7 +16,7 @@ export default function PricingPage() {
   const plans = [
     { title: "Professional", price: "299", popular: false, features: ["Online appointment booking", "Client management (CRM)", "Staff management", "Basic leave tracking", "Automated reminders", "Basic reporting", "1 Branch"] },
     { title: "Business", price: "499", popular: true, features: ["Everything in Professional", "Inventory management", "Workflow automation", "Advanced analytics", "Up to 3 Branches", "Priority support"] },
-    { title: "Enterprise", price: "850", popular: false, features: ["Everything in Business", "Up to 10 Branches", "Custom workflows", "API access", "Dedicated onboarding", "Premium support"] },
+    { title: "Enterprise", price: "999", popular: false, features: ["Everything in Business", "Up to 10 Branches", "Custom workflows", "API access", "Dedicated onboarding", "Premium support"] },
   ];
 
   return (
@@ -41,8 +41,8 @@ export default function PricingPage() {
             <div
               key={p.title}
               className={`p-10 rounded-3xl border transition-all duration-500 relative ${p.popular
-                  ? "bg-white shadow-2xl scale-105 border-accent z-10"
-                  : "bg-transparent border-border hover:border-foreground/10"
+                ? "bg-white shadow-2xl scale-105 border-accent z-10"
+                : "bg-transparent border-border hover:border-foreground/10"
                 }`}
             >
               {p.popular && (
@@ -69,8 +69,8 @@ export default function PricingPage() {
               <Link
                 href="/contact"
                 className={`w-full block text-center py-4 rounded-xl font-bold transition-all ${p.popular
-                    ? "bg-accent text-white shadow-lg hover:shadow-accent/40"
-                    : "bg-brand text-brand-foreground hover:opacity-90"
+                  ? "bg-accent text-white shadow-lg hover:shadow-accent/40"
+                  : "bg-brand text-brand-foreground hover:opacity-90"
                   }`}
               >
                 Secure This Plan

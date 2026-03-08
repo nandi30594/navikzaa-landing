@@ -81,7 +81,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden absolute top-full left-0 right-0 glass transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-[400px] border-t border-border/50" : "max-h-0 border-t-0"
+      <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl transition-all duration-300 overflow-hidden shadow-2xl ${menuOpen ? "max-h-[500px] border-t border-border/50" : "max-h-0 border-t-0"
         }`}>
         <div className="px-6 py-8 space-y-6 flex flex-col">
           {navLinks.map((item) => (

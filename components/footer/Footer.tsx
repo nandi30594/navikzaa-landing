@@ -35,23 +35,9 @@ export default function Footer() {
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-accent/5 blur-[100px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-12 gap-12 mb-12">
-
-          <div className="md:col-span-4">
-            <Link href="/" className="flex items-center mb-6 group transition-transform hover:scale-105 origin-left">
-              <img
-                src="/navikzaa-logo.svg"
-                alt="Navikzaa Logo"
-                className="h-12 w-auto object-contain"
-              />
-            </Link>
-            <p className="text-brand-foreground/60 leading-relaxed max-w-sm text-base font-medium">
-              The intelligent operating system for premium service brands. Designed for clarity, control, and effortless scale.
-            </p>
-          </div>
-
-          {/* Links Sections */}
-          <div className="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="mb-12">
+          {/* Links Sections - Full Width Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {sections.map((section) => (
               <div key={section.title}>
                 <h3 className="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-accent">

@@ -172,9 +172,24 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Professional", price: "299", popular: false },
-              { title: "Business", price: "499", popular: true },
-              { title: "Enterprise", price: "850", popular: false },
+              {
+                title: "Professional",
+                price: "299",
+                popular: false,
+                features: ["Online appointment booking", "Client management (CRM)", "Staff management", "Basic leave tracking", "Automated reminders", "Basic reporting", "1 Branch"]
+              },
+              {
+                title: "Business",
+                price: "499",
+                popular: true,
+                features: ["Everything in Professional", "Inventory management", "Workflow automation", "Advanced analytics", "Up to 3 Branches", "Priority support"]
+              },
+              {
+                title: "Enterprise",
+                price: "999",
+                popular: false,
+                features: ["Everything in Business", "Up to 10 Branches", "Custom workflows", "API access", "Dedicated onboarding", "Premium support"]
+              },
             ].map((p) => (
               <div
                 key={p.title}
@@ -196,8 +211,8 @@ export default function Home() {
                 </div>
 
                 <ul className="space-y-4 mb-10">
-                  {["All Core Features", "Multi-User Access", "Advanced Reporting", "Email & SMS Automations"].map(bullet => (
-                    <li key={bullet} className="flex items-center text-sm font-medium">
+                  {p.features.map(bullet => (
+                    <li key={bullet} className="flex items-center text-sm font-medium text-left">
                       <CheckIcon />
                       <span className="ml-3 text-foreground/80">{bullet}</span>
                     </li>
