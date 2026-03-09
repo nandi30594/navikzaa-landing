@@ -14,9 +14,9 @@ export const metadata = {
 
 export default function PricingPage() {
   const plans = [
-    { title: "Professional", price: "299", popular: false, features: ["Online appointment booking", "Client management (CRM)", "Staff management", "Basic leave tracking", "Automated reminders", "Basic reporting", "1 Branch"] },
-    { title: "Business", price: "499", popular: true, features: ["Everything in Professional", "Inventory management", "Workflow automation", "Advanced analytics", "Up to 3 Branches", "Priority support"] },
-    { title: "Enterprise", price: "999", popular: false, features: ["Everything in Business", "Up to 10 Branches", "Custom workflows", "API access", "Dedicated onboarding", "Premium support"] },
+    { title: "Professional", popular: false, features: ["Online appointment booking", "Client management (CRM)", "Staff management", "Basic leave tracking", "Automated reminders", "Basic reporting", "1 Branch"] },
+    { title: "Business", popular: true, features: ["Everything in Professional", "Inventory management", "Workflow automation", "Advanced analytics", "Up to 3 Branches", "Priority support"] },
+    { title: "Enterprise", popular: false, features: ["Everything in Business", "Up to 10 Branches", "Custom workflows", "API access", "Dedicated onboarding", "Premium support"] },
   ];
 
   return (
@@ -51,10 +51,8 @@ export default function PricingPage() {
                 </div>
               )}
               <h2 className="text-xl font-bold mb-6 tracking-tight">{p.title}</h2>
-              <div className="flex items-baseline mb-8">
-                <span className="text-4xl font-bold tracking-tight">$</span>
-                <span className="text-6xl font-extrabold tracking-tighter mx-1">{p.price}</span>
-                <span className="text-muted-foreground font-medium">/mo</span>
+              <div className="mb-8 text-sm font-semibold text-accent uppercase tracking-wider">
+                Contact for Pricing
               </div>
 
               <ul className="space-y-4 mb-10">
@@ -73,7 +71,7 @@ export default function PricingPage() {
                   : "bg-brand text-brand-foreground hover:opacity-90"
                   }`}
               >
-                Secure This Plan
+                Contact Sales
               </Link>
             </div>
           ))}
