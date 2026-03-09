@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center group transition-transform hover:scale-105">
           <img
-            src="/navikzaa-logo.png"
+            src="/NVK.png"
             alt="Navikzaa Logo"
             className="h-20 w-auto object-contain"
           />
